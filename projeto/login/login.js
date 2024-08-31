@@ -1,9 +1,10 @@
+// login.js
 document.getElementById('login-form').addEventListener('submit', function(event) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('error-message');
     
-    // Exemplo de validação básica no cliente (não substitui a validação do servidor)
+    // Exemplo de validação básica no cliente
     if (username === '' || password === '') {
         event.preventDefault(); // Impede o envio do formulário
         errorMessage.textContent = 'Por favor, preencha todos os campos.';

@@ -1,4 +1,4 @@
-// script.js
+// index.js
 let currentIndex = 0;
 const slideInterval = 7000; // Intervalo de 7 segundos
 
@@ -16,6 +16,10 @@ function showSlide(index) {
 
     const offset = -currentIndex * 100;
     document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+
+    // Mostrar/ocultar botões de navegação
+    document.querySelector('.prev').style.display = totalSlides > 1 ? 'block' : 'none';
+    document.querySelector('.next').style.display = totalSlides > 1 ? 'block' : 'none';
 }
 
 function nextSlide() {
@@ -31,5 +35,3 @@ document.querySelector('.prev').addEventListener('click', prevSlide);
 
 // Inicia o carrossel automático
 setInterval(nextSlide, slideInterval);
-
-
