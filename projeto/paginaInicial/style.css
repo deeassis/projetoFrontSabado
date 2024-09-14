@@ -219,6 +219,7 @@ button {
 
 /* Estilos para a seção de produtos */
 .produtos {
+  padding: 25px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -253,3 +254,32 @@ footer p {
   margin: 0;
   font-size: 14px;
 }
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 600px) {
+  .info-bar {
+    font-size: 12px; /* Reduz o tamanho da fonte */
+  }
+
+  .info-bar-content {
+    gap: 20px; /* Reduz o espaço entre os itens */
+  }
+
+  .logo {
+    height: 15px; /* Reduz o tamanho da logo */
+  }
+
+  .categories h2 {
+    font-size: 20px; /* Reduz o tamanho do título */
+  }
+
+  .category-item {
+    height: 100px; /* Ajusta a altura dos itens da categoria */
+  }
+
+  .produto {
+    width: calc(50% - 10px); /* Ajusta a largura dos produtos em telas pequenas */
+  }
+}
+
+
