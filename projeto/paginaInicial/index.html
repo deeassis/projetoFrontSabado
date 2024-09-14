@@ -11,8 +11,26 @@
   </head>
   <body>
     <header>
-      <h1>Nome da Loja</h1>
+      <div class="info-bar">
+        <div class="info-bar-content">
+        <img src="./img/favicon.png" alt="Logo FK Adesivos" class="logo" />
+        <span>
+          <a href="https://wa.me/5511985217379" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i> (11) 98521-7379
+          </a>
+        </span>
+        
+        <span>
+          <a href="https://instagram.com/fkadesivos" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> fkadesivos
+          </a>
+        </span>
+        <span><i class="fas fa-plane"></i> Entregas via Sedex - Enviamos para todo o Brasil!</span>
+      <span><i class="fas fa-clock"></i> Segunda a Sexta 9h ás 18h</span>
+    </div>
+    </div>
     </header>
+    
     <nav id="nav">
       <ul>
         <li><a href="#">Inicio</a></li>
@@ -24,32 +42,52 @@
       </ul>
     </nav>
 
-    <div class="carousel">
-        <div class="slides">
-            <div
-            class="carousel-image active"
-          >
-          <img src="./img/banner.png" />
-        </div>
-          <div
-            class="carousel-image"
-          >
-          <img src="./img/banner.png" />
-        </div>
+   
 
-          <div
-            class="carousel-image"
-          >
-            <img src="./img/banner.png" />
+    <div class="carousel">
+      <div class="slides">
+        <div class="carousel-image active">
+          <img src="./img/banner1.jpg" />
         </div>
+        <div class="carousel-image">
+          <img src="./img/banner2.jpg" />
         </div>
-        <button class="prev" style="display: none;">&#x25C0;</button>
-        <button class="next" style="display: none;">&#x25B6;</button>
+        <div class="carousel-image">
+          <img src="./img/banner3.jpg" />
+        </div>
+        <div class="carousel-image">
+          <img src="./img/banner4.jpg" />
+        </div>
+      </div>
+      <button class="prev" style="display: none;">&#x25C0;</button>
+      <button class="next" style="display: none;">&#x25B6;</button>
+    </div>
+
+    <div class="categories">
+      <div class="category-list">
+        <a href="pagina-honda.html" class="category-item">
+          <img src="./img/marcascategorias3.png" alt="Honda" />
+          <span>Honda</span>
+        </a>
+        <a href="pagina-yamaha.html" class="category-item">
+          <img src="./img/marcascategorias2.png" alt="Yamaha" />
+          <span>Yamaha</span>
+        </a>
+        <a href="pagina-bmw.html" class="category-item">
+          <img src="./img/marcas categorias.png" alt="BMW" />
+          <span>BMW</span>
+        </a>
+        
+        <a href="pagina-triumph.html" class="category-item">
+          <img src="./img/marcascategorias1.png" alt="Triumph" />
+          <span>Triumph</span>
+        </a>
+      </div>
     </div>
 
     <div class="produtos">
       <div class="produto">
-        <img src="./img/Produto.png" alt="produto" />
+        <img src="./img/1.jpg" alt="produto" />
         <h1 class="title">Produto 1</h1>
         <p>Preço</p>
       </div>
@@ -79,9 +117,11 @@
         <p>Preço</p>
       </div>
     </div>
+
+    <footer>
+      <p>&copy; Denise Assis - Téc. Desenvolvimento de Sistemas - 2024</p>
+    </footer>
+    
+    <script src="./index.js"></script>
   </body>
-  <footer>
-    <p>&copy; Denise Assis - Téc. Desenvolvimento de Sistemas - 2024</p>
-</footer>
-  <script src="./index.js"></script>
 </html>

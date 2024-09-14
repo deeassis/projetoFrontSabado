@@ -1,6 +1,6 @@
 // index.js
 let currentIndex = 0;
-const slideInterval = 7000; // Intervalo de 7 segundos
+const slideInterval = 4000; // Intervalo de 4 segundos
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-image');
