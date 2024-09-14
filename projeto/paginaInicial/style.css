@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+ 
   box-sizing: border-box;
 }
 
@@ -12,6 +13,7 @@ html, body {
     "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   background: url('img/background.jpg') center center / cover no-repeat;
+ 
 }
 
 /* Estilos para o header */
@@ -65,7 +67,7 @@ header {
 /* Estilo dos ícones */
 .info-bar i {
   font-size: 18px;
-  color: #08b44a; /* Cor de destaque para os ícones */
+  color: #03b045; /* Cor de destaque para os ícones */
 }
 
 /* Espaçamento entre o ícone e o texto */
@@ -181,19 +183,23 @@ button {
 }
 
 .category-item {
-  display: flex; /* Layout flexível para o conteúdo do item */
-  flex-direction: column; /* Alinha o texto abaixo da imagem */
-  align-items: center; /* Alinha o conteúdo ao centro */
-  text-decoration: none; /* Remove sublinhado dos links */
-  color: #333; /* Cor padrão do texto dos links */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  width: 100%; /* O container ocupará toda a largura disponível */
+  height: 120px; /* Define uma altura menor para deixar o container mais fino */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category-item img {
-  width: 100px; /* Largura fixa para as imagens das marcas */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%; /* A imagem ocupará toda a largura do container */
+  height: 100%; /* Ajusta automaticamente a altura */
+  object-fit: contain; /* Mantém a proporção da imagem sem cortar */
   border-radius: 8px; /* Bordas arredondadas */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category-item span {
